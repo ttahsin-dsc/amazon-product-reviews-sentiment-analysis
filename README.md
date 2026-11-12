@@ -112,11 +112,23 @@ The same analysis and chart generation process was applied separately to the oth
 ## Repository contents
 
 ```text
+
 amazon-reviews-sentiment-analysis/
 ├── README.md
 ├── top3_compare.py
 └── outputs/
     ├── B00DRALJ28/
+    │   ├── summary.csv
+    │   ├── monthly_trends.csv
+    │   ├── top_words.csv
+    │   ├── top_bigrams.csv
+    │   ├── rating_distribution.png
+    │   ├── sentiment_distribution.png
+    │   ├── sentiment_compound_hist.png
+    │   ├── bubble_rating_vs_sentiment.png
+    │   ├── review_word_count_hist.png
+    │   └── wordcloud.png
+    │
     ├── B00AZBIZTW/
     │   ├── summary.csv
     │   ├── monthly_trends.csv
@@ -128,9 +140,21 @@ amazon-reviews-sentiment-analysis/
     │   ├── bubble_rating_vs_sentiment.png
     │   ├── review_word_count_hist.png
     │   └── wordcloud.png
+    │
     └── B0013BKD08/
-```
+        ├── summary.csv
+        ├── monthly_trends.csv
+        ├── top_words.csv
+        ├── top_bigrams.csv
+        ├── rating_distribution.png
+        ├── sentiment_distribution.png
+        ├── sentiment_compound_hist.png
+        ├── bubble_rating_vs_sentiment.png
+        ├── review_word_count_hist.png
+        └── wordcloud.png
 
+```
+The project generates separate analytical outputs for each of the three selected Amazon products. Each product folder contains summary statistics, monthly review trends, frequently occurring words and bigrams, sentiment distributions, rating analysis, review length distributions, bubble charts, and word clouds. Organising the results by product allows the findings to be explored independently while keeping the analysis reproducible and easy to navigate.
 Each ASIN folder has the same output-file structure. CSV files store summaries and frequency/trend tables; PNG files contain the plots.
 
 ## Running the analysis
